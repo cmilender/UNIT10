@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Chapter 7 Exercise 23</title>
+</head>
+
+<body>
+
+<h1> Reverse Your Input </h1> <br>
+
+Please enter a string of text <input type="text" id="input"> <br>
+<button type="button" onclick= "return reverse();"> Reverse</button>
+
+<div id="result"></div>
+
+<script>
+
+function reverse() {
+	var input = document.getElementById("input").value.split("").reverse().join("");
+    document.getElementById("result").innerHTML = input;
+};
+
+</script>
+
+</body>
+</html>
